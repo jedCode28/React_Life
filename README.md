@@ -28,12 +28,16 @@ Secondly we need to remove the remote so we are not pointing to this starter rep
   it/
 
 1.  - remove origin `git remote rm origin`
-    - git add remote origin sshlink-here-yo
+    - git remote add origin sshlink-here-yo
 
 2.  or
     `rm -rf .git`
+
     `git init`
     `git remote add origin sshlink-here-yo`
+
     `git add .`
+
     `git commit -m`
+    
     `git push origin master`

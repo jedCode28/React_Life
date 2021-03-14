@@ -1,0 +1,14 @@
+import {useParams, useLocation, useHistory} from 'react-router-dom'
+ export default ()=>{
+     const {id} = useParams()
+     const {thingToPass} = useLocation()
+     const history = useHistory()
+    return(
+        <>
+        <p onClick={()=>history.goBack()}>back</p>
+        <h1>PassData Demo</h1>
+        <p> id: {id}</p>
+        <p> thingToPass (from navbar link): {thingToPass}</p>
+        </>
+    )
+}

@@ -27,17 +27,24 @@ Secondly we need to remove the remote so we are not pointing to this starter rep
   remote keeps the commit history from starter project, and rm -rf .git is going to complete remove
   it/
 
-1.  - remove origin `git remote rm origin`
-    - git remote add origin sshlink-here-yo
+1. remove remote and add new one 
+    - remove origin 
+      `git remote rm origin`
+    - Then add new remote 
+     `git remote add origin sshlink-here-yo`
 
-2.  or
+--OR--
+
+1.  or remove and recreate .git
+   
     `rm -rf .git`
 
     `git init`
+
     `git remote add origin sshlink-here-yo`
 
     `git add .`
 
     `git commit -m`
-    
+
     `git push origin master`

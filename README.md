@@ -29,8 +29,11 @@ Secondly we need to remove the remote so we are not pointing to this starter rep
 
 1. remove remote and add new one 
     - remove origin 
+  
       `git remote rm origin`
     - Then add new remote 
+
+
      `git remote add origin sshlink-here-yo`
 
 --OR--

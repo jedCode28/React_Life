@@ -1,5 +1,5 @@
 import {useParams, useLocation, useHistory} from 'react-router-dom'
- export default ()=>{
+  const PassData = () => {
      const {id} = useParams()
      const {thingToPass} = useLocation()
      const history = useHistory()
@@ -12,3 +12,4 @@ import {useParams, useLocation, useHistory} from 'react-router-dom'
         </>
     )
 }
+export default PassData

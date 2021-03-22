@@ -1,7 +1,7 @@
 import {useEffect} from 'react'
 import axios from 'axios'
 
-export default ()=>{
+const Home = () => {
     useEffect(()=>{
         apiDemoCall()
     },[])
@@ -21,3 +21,4 @@ export default ()=>{
         </>
     )
 }
+export default Home

@@ -1,5 +1,6 @@
 import {useEffect} from 'react'
 import axios from 'axios'
+import Clock from './Clock'
 
 const Home = () => {
     useEffect(()=>{
@@ -18,6 +19,7 @@ const Home = () => {
     return(
         <>
           <h1>Home</h1>
+          <Clock/>
         </>
     )
 }
